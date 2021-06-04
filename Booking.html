@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+ 
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--
+
+    Template 2093 Flight
+
+    http://www.tooplate.com/view/2093-flight
+
+    -->
+    <title>Booking Details</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+    <section class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Flight Template">
+                        <img alt="login" src="img/ZBlogo.png" width="70" height="70">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="page-direction-button">
+                        <a href="index.html"><i class="fa fa-home"></i>Go Back Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                 
+                <div class="col-md-5" style="width:100%">
+                    <section id="first-tab-group" class="tabgroup">
+
+                        <div class="submit-form" style="width:100%">
+                            <h4>Result Search of availability for <em>direction</em>:</h4>
+                            <form id="form-submit" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio-select">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <label for="round">Round</label>
+                                                    <input type="radio" name="trip" id="round" value="round" requiredonchange='this.form.()'>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <label for="oneway">Oneway</label>
+                                                    <input type="radio" name="trip" id="oneway" value="one-way" requiredonchange='this.form.()'>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <fieldset>
+                                                    <label for="Adult">
+                                                        Adult:
+                                                        <select required name='Adult' onchange='this.form.()'>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">6</option>
+                                                            <option value="7">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                        </select>
+                                                    </label>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <fieldset>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="Child">
+                                                            Child:
+                                                            <select required name='Child' onchange='this.form.()'>
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">6</option>
+                                                                <option value="7">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+
+                                                </fieldset>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <fieldset>
+                                            <label for="from">From:</label>
+                                            <select required name='from' onchange='this.form.()'>
+                                                <option value="">Select a location...</option>
+                                                <option value="Cambodia">Cambodia</option>
+                                                <option value="Hong Kong">Hong Kong</option>
+                                                <option value="India">India</option>
+                                                <option value="Japan">Japan</option>
+                                                <option value="Korea">Korea</option>
+                                                <option value="Laos">Laos</option>
+                                                <option value="Myanmar">Myanmar</option>
+                                                <option value="Singapore">Singapore</option>
+                                                <option value="Thailand">Thailand</option>
+                                                <option value="Vietnam">Vietnam</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <fieldset>
+                                            <label for="to">To:</label>
+                                            <select required name='to' onchange='this.form.()'>
+                                                <option value="">Select a location...</option>
+                                                <option value="Cambodia">Cambodia</option>
+                                                <option value="Hong Kong">Hong Kong</option>
+                                                <option value="India">India</option>
+                                                <option value="Japan">Japan</option>
+                                                <option value="Korea">Korea</option>
+                                                <option value="Laos">Laos</option>
+                                                <option value="Myanmar">Myanmar</option>
+                                                <option value="Singapore">Singapore</option>
+                                                <option value="Thailand">Thailand</option>
+                                                <option value="Vietnam">Vietnam</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <fieldset>
+                                            <label for="departure">Departure date:</label>
+                                            <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Select date..." required onchange='this.form.()'>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <fieldset>
+                                            <label for="return">Return date:</label>
+                                            <input name="return" type="text" class="form-control date" id="return" placeholder="Select date..." required onchange='this.form.()'>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <fieldset>
+                                                <label for="Class">
+                                                    Class:
+                                                    <select required name='Class' onchange='this.form.()'>
+                                                        <option value="1">Economy</option>
+                                                        <option value="2">High Economy</option>
+                                                        <option value="3">Business</option>
+
+                                                    </select>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="btn">Order Ticket Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </section>
+                    <section id="first-tab-group" class="tabgroup">
+                        <div class="submit-form" style="width:100%">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <span class="">3 results</span>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <label for="secondarySort">
+                                            Sort by
+                                            <select id="secondarySort" name="secondarySort">
+                                                <option value="BEST">Best</option>
+                                                <option value="CHEAPEST">Cheapest first</option>
+                                                <option value="FASTEST">Fastest first</option>
+                                                <option value="DEPARTURE_OUTBOUND_ASC">Outbound: Departure time</option>
+                                                <option value="DEPARTURE_INBOUND_ASC">Return: Departure time</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                             
+                            </div>
+                        </div>
+                    </section>
+            </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
