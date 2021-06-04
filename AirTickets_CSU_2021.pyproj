@@ -44,6 +44,7 @@
     <Compile Include="AirTickets_CSU_2021\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AirTickets_CSU_2021\templets\" />
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
