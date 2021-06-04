@@ -7,22 +7,25 @@ from django.db import models
 
 # model UserData
 class Users(models.Model):
-    Id=models.IntegerField()
+    UserId=models.IntegerField()
     UserName=models.CharField(max_length=20)
     EnFullName=models.CharField(max_length=100)
+    Gender=models.BooleanField(default=true)
     DateOfBirth=models.CharField(max_length=100)
     PassportNumber=models.CharField(max_length=10)
-    Nationalty=models.CharField(max_length=20)
-    Gender=models.BooleanField(default=true)
+    Nationalty=models.CharField(max_length=20)    
     Password=models.CharField(max_length=20)
     Email=models.CharField(max_length=100)
+    Notice=models.CharField(max_length=300)
     IsActive=models.BooleanField(default=true)
 
 # model Twons and AirPort
 class AirPorts(models.Model):
     AirPortsId=models.CharField(max_length=10)
     PortName=models.CharField(max_length=30)
-    PorthortName=models.CharField(max_length=30)
+    PortShortName=models.CharField(max_length=30)
+    Country=models.CharField(max_length=10)
+    ParantId=models.CharField(max_length=10)
     IsActive=models.BooleanField(default=true)
 
     # model UseSearch Results
@@ -44,9 +47,15 @@ class flightsData(models.Model):
     FlightStopAirPorts=models.CharField(max_length=10)
     TicketCost=models.IntegerField()
     TaxCost=models.IntegerField()
+    InDate=models.datetime()
 
 
 class BookingData(models.Model):
     BokingId=models.CharField(max_length=20)
-
+    BUserId=models.IntegerField()
+    BflightId=models.CharField(max_length=20)
+    BookingDate=models.datetime()
+    IsSent=models.BooleanField(default=true)
+    IsConfirmed=models.BooleanField(default=true)
+    IsPaid=models.BooleanField(default=true)
     
