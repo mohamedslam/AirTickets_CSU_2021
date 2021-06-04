@@ -64,6 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ABOUT THIS TEMPLATE.txt" />
+    <Content Include="app\templates\app\Booking.html" />
+    <Content Include="app\templates\app\LogIn Admin.html" />
+    <Content Include="app\templates\app\readme.html" />
+    <Content Include="app\templates\app\Registration Admin.html" />
+    <Content Include="app\templates\app\Registration User.html" />
     <Content Include="Booking.html" />
     <Content Include="contact.html" />
     <Content Include="css\bootstrap-theme.css" />
