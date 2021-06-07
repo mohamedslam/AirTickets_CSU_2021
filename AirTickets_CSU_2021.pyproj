@@ -31,6 +31,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\bootTelegram.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\dbOperation.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -55,12 +61,17 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="AirTickets_CSU_2021\" />
-    <Folder Include="css\" />
-    <Folder Include="css\fonts\" />
+    <Folder Include="app\static\app\content\css\" />
+    <Folder Include="app\static\app\content\css\fonts\" />
+    <Folder Include="examples\" />
     <Folder Include="fonts\" />
     <Folder Include="img\" />
     <Folder Include="js\" />
     <Folder Include="js\vendor\" />
+    <Folder Include="src\" />
+    <Folder Include="src\connector\" />
+    <Folder Include="src\types\" />
+    <Folder Include="src\util\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ABOUT THIS TEMPLATE.txt" />
@@ -70,22 +81,32 @@
     <Content Include="app\templates\app\Registration Admin.html" />
     <Content Include="app\templates\app\Registration User.html" />
     <Content Include="Booking.html" />
+    <Content Include="Cargo.toml" />
     <Content Include="contact.html" />
-    <Content Include="css\bootstrap-theme.css" />
-    <Content Include="css\bootstrap-theme.css.map" />
-    <Content Include="css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\bootstrap.css.map" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\datepicker.css" />
-    <Content Include="css\fontAwesome.css" />
-    <Content Include="css\fonts\flexslider-icon.eot" />
-    <Content Include="css\fonts\flexslider-icon.svg" />
-    <Content Include="css\fonts\flexslider-icon.ttf" />
-    <Content Include="css\fonts\flexslider-icon.woff" />
-    <Content Include="css\hero-slider.css" />
-    <Content Include="css\owl-carousel.css" />
-    <Content Include="css\tooplate-style.css" />
+    <Content Include="app\static\app\content\css\bootstrap-theme.css" />
+    <Content Include="app\static\app\content\css\bootstrap-theme.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap-theme.min.css" />
+    <Content Include="app\static\app\content\css\bootstrap.css" />
+    <Content Include="app\static\app\content\css\bootstrap.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap.min.css" />
+    <Content Include="app\static\app\content\css\datepicker.css" />
+    <Content Include="app\static\app\content\css\fontAwesome.css" />
+    <Content Include="app\static\app\content\css\fonts\flexslider-icon.eot" />
+    <Content Include="app\static\app\content\css\fonts\flexslider-icon.svg" />
+    <Content Include="app\static\app\content\css\fonts\flexslider-icon.ttf" />
+    <Content Include="app\static\app\content\css\fonts\flexslider-icon.woff" />
+    <Content Include="app\static\app\content\css\hero-slider.css" />
+    <Content Include="app\static\app\content\css\owl-carousel.css" />
+    <Content Include="app\static\app\content\css\tooplate-style.css" />
+    <Content Include="examples\errors.rs" />
+    <Content Include="examples\features.rs" />
+    <Content Include="examples\get_me.rs" />
+    <Content Include="examples\live_location.rs" />
+    <Content Include="examples\pin.rs" />
+    <Content Include="examples\poll.rs" />
+    <Content Include="examples\send.rs" />
+    <Content Include="examples\simple.rs" />
+    <Content Include="examples\tracing.rs" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -173,6 +194,18 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="src\api.rs" />
+    <Content Include="src\connector\hyper.rs" />
+    <Content Include="src\connector\mod.rs" />
+    <Content Include="src\errors.rs" />
+    <Content Include="src\lib.rs" />
+    <Content Include="src\macros.rs" />
+    <Content Include="src\prelude.rs" />
+    <Content Include="src\stream.rs" />
+    <Content Include="src\types\mod.rs" />
+    <Content Include="src\types\requests.rs" />
+    <Content Include="src\util\messages.rs" />
+    <Content Include="src\util\mod.rs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">
